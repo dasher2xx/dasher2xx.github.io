@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding-top: 5vh; /* Space for the floating header */
+}
+
+.header {
+    background-color: #202020;
+    color: white;
+    height: 8vh;
+    width: 100%;
+    position: fixed; /* Makes the header float */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+main {
+    padding: 4vh;
+    font-family: Work Sans;
+}
+
+.headertext {
+    font-family: Work Sans;
+    margin: 3vh;
+    margin-right: 1vh;
+      
+    display: inline-block;
+    position: relative;
+    padding-bottom: .2%;
+}
+
+.headertext:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .headertext:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+.headertextt {
+    font-family: Work Sans;
+    margin: 3vh;
+    margin-left: 0vh;
+    margin-right: 1vh;
+    display: inline-block;
+}
+
+.headerlink {
+    font-family: Work Sans;
+    margin: 3vh;
+    margin-right: 1vh;
+    margin-left: 0vh;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding-bottom: .2%;
+    color: #fff;
+}
+
+.headerlink:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+.headerlink:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+.mainsectiontext {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.maintext {
+    font-weight: 400;
+    text-indent: 1vh;
+}
+
+.intextlink {
+    font-family: Work Sans;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: .2%;
+    color: #000000;
+    font-weight: 600;
+}
+
+.intextlink:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+.intextlink:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+.contacttext {
+    font-weight: 600;
+}
+
+.image {
+    padding: 2px;
+    border: 2px solid #000;
+    height: 50%;
+    width: 50%;
+}
