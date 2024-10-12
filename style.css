@@ -1,13 +1,14 @@
 body {
     margin: 0;
+    background-color: #101010;
     font-family: Arial, sans-serif;
     padding-top: 5vh; /* Space for the floating header */
 }
 
 .header {
-    background-color: #202020;
+    background-color: #151515;
     color: white;
-    height: 8vh;
+    height: 7.5vh;
     width: 100%;
     position: fixed; /* Makes the header float */
     top: 0;
@@ -17,13 +18,15 @@ body {
 
 main {
     padding: 4vh;
-    font-family: Work Sans;
+    color: white;
+    font-family: 'Iosevka Web';
 }
 
 .headertext {
-    font-family: Work Sans;
+    font-family: 'Iosevka Web';
     margin: 3vh;
     margin-right: 1vh;
+    font-size: 1.5vh;
       
     display: inline-block;
     position: relative;
@@ -48,16 +51,18 @@ main {
   }
 
 .headertextt {
-    font-family: Work Sans;
+   font-family: 'Iosevka Web';
     margin: 3vh;
+    font-size: 1.5vh;
     margin-left: 0vh;
     margin-right: 1vh;
     display: inline-block;
 }
 
 .headerlink {
-    font-family: Work Sans;
+    font-family: 'Iosevka Web';
     margin: 3vh;
+    font-size: 1.4vh;
     margin-right: 1vh;
     margin-left: 0vh;
     text-decoration: none;
@@ -86,21 +91,23 @@ main {
 }
 
 .mainsectiontext {
-    font-weight: bolder;
-    font-size: xx-large;
+    font-size: 2vh;
+    font-weight: 600;
 }
 
 .maintext {
+    font-size: 1.5vh;
     font-weight: 400;
     text-indent: 1vh;
 }
 
 .intextlink {
-    font-family: Work Sans;
+    font-family: 'Iosevka Web';
+    font-style: italic;
     text-decoration: none;
     position: relative;
     padding-bottom: .2%;
-    color: #000000;
+    color: white;
     font-weight: 600;
 }
 
@@ -112,7 +119,7 @@ main {
     height: 2px;
     left: 50%;
     position: absolute;
-    background: #000;
+    background: #fff;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
@@ -127,8 +134,46 @@ main {
 }
 
 .image {
-    padding: 2px;
-    border: 2px solid #000;
-    height: 50%;
-    width: 50%;
+    margin-right: 1.5vh;
+    float: left;
+    border: 0.6vh solid #fff;
+    height: 27%;
+    width: 27%;
+    animation-name: example1;
+    animation-duration: 1s;
+    opacity: 1;
+}
+
+.image:hover {
+    animation-name: example;
+    animation-duration: 1s;
+    opacity: 0.8;
+}
+
+@keyframes example {
+    from {opacity: 1;}
+    to {opacity: 0.8;}
+}
+
+@keyframes example1 {
+    from {opacity: 0.8;}
+    to {opacity: 1;}
+}
+
+.maintextt {
+    text-indent: 1.5vh;
+    font-size: 1.5vh;
+    font-weight: 400;
+    float: center;
+}
+
+.intextlinkk {
+    font-family: 'Iosevka Web';
+    font-style: italic;
+    text-decoration: none;
+    padding-bottom: .2%;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5vh;
+    float: center;
 }
