@@ -177,3 +177,76 @@ main {
     font-size: 1.5vh;
     float: center;
 }
+
+.dropdown {
+    font-family: 'Iosevka Web';
+    font-size: 1.5vh;
+    display: inline-block;
+    position: relative;
+    padding-bottom: .2%;
+}
+
+.dropdown button{
+    position: float;
+    margin: 3vh;
+    margin-right: 1vh;
+    font-size: 1.5vh;
+    font-family: 'Iosevka Web';
+    background-color: #151515;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    float: center;
+    display: flex;
+}
+
+.dropdown a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: #151515;
+    border: 0.2vh solid;
+    min-width: 100px;
+    margin-left: 3vh;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+
+.dropdown button:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: flex;
+    height: 2px;
+    left: 50%;
+    float: center;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+
+.dropdown button:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
